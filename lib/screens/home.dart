@@ -12,11 +12,38 @@ class _HomeScreenState extends State<HomeScreen> {
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
+            colorFilter: new ColorFilter.mode(
+                Colors.black.withOpacity(0.2), BlendMode.dstATop),
             image: AssetImage("assets/background_home.jpg"),
             fit: BoxFit.cover,
           ),
         ),
-        child: null /* add child content here */,
+        child: Center(
+          child: Column(
+            children: <Widget>[
+              Expanded(
+                child: Center(
+                  child: Text(
+                    'Heading',
+                    style: TextStyle(
+                      color: Colors.blue,
+                      fontFamily: 'AbrilFatface',
+                      fontSize: 48.0,
+                    ),
+                  ),
+                ),
+              ),
+              Expanded(
+                child: Center(
+                  child: Text(
+                    'Next line',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }

@@ -19,3 +19,10 @@ flutter:
   uses-material-design: true
   assets:
     - assets/
+  fonts:
+    - family: AbrilFatface
+      fonts:
+        - asset: fonts/AbrilFatface-Regular.ttf
+#    - family: Poppins
+#      fonts:
+#        - asset: fonts/Poppins-RegularItalic.tff
