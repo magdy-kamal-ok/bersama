@@ -37,7 +37,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: Center(
                   child: Text(
                     'Next line',
-                    style: TextStyle(color: Colors.white),
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
                   ),
                 ),
               ),
