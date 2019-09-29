@@ -13,7 +13,7 @@ class _HomeScreenState extends State<HomeScreen> {
         decoration: BoxDecoration(
           image: DecorationImage(
             colorFilter: new ColorFilter.mode(
-                Colors.black.withOpacity(0.2), BlendMode.dstATop),
+                Colors.black.withOpacity(0.6), BlendMode.dstATop),
             image: AssetImage("assets/background_home.jpg"),
             fit: BoxFit.cover,
           ),
@@ -30,7 +30,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   style: TextStyle(
                     color: Colors.redAccent,
                     fontFamily: 'AbrilFatface',
-                    fontSize: 24.0,
+                    fontSize: 26.0,
                   ),
                 ),
               ),
@@ -53,21 +53,3 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
-
-// Padding(
-//               padding: EdgeInsets.only(top: 40.0),
-//               child: Text(
-//                 'Heading',
-//                 style: TextStyle(
-//                   color: Colors.blue,
-//                   fontFamily: 'AbrilFatface',
-//                   fontSize: 48.0,
-//                 ),
-//               ),
-//             ),
-//             Text(
-//               'Next line',
-//               style: TextStyle(
-//                 color: Colors.white,
-//               ),
-//             ),
