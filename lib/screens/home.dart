@@ -22,7 +22,7 @@ class _HomeScreenState extends State<HomeScreen> {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             Expanded(
-              flex: 1,
+              flex: 2,
               child: Padding(
                 padding: EdgeInsets.only(top: 60.0, left: 25.0),
                 child: Text(
@@ -36,7 +36,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             Expanded(
-              flex: 3,
+              flex: 5,
               child: Padding(
                 padding: EdgeInsets.only(top: 20.0, left: 25.0, right: 10.0),
                 child: Text('Overcome stress and negative thoughts',
@@ -45,6 +45,23 @@ class _HomeScreenState extends State<HomeScreen> {
                       fontFamily: 'AbrilFatface',
                       fontSize: 36.0,
                     )),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(left: 100.0, bottom: 50.0, right: 20.0),
+              child: Material(
+                elevation: 10.0,
+                color: Colors.lightBlueAccent,
+                child: MaterialButton(
+                  onPressed: null,
+                  minWidth: 200.0,
+                  height: 42.0,
+                  child: Text(
+                    'Get Started',
+                    style: TextStyle(
+                        color: Colors.white, fontFamily: 'AbrilFatface'),
+                  ),
+                ),
               ),
             ),
           ],
