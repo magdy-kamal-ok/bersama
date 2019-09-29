@@ -18,35 +18,56 @@ class _HomeScreenState extends State<HomeScreen> {
             fit: BoxFit.cover,
           ),
         ),
-        child: Center(
-          child: Column(
-            children: <Widget>[
-              Expanded(
-                child: Center(
-                  child: Text(
-                    'Heading',
-                    style: TextStyle(
-                      color: Colors.blue,
-                      fontFamily: 'AbrilFatface',
-                      fontSize: 48.0,
-                    ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: <Widget>[
+            Expanded(
+              flex: 1,
+              child: Padding(
+                padding: EdgeInsets.only(top: 60.0, left: 25.0),
+                child: Text(
+                  'Bersama',
+                  style: TextStyle(
+                    color: Colors.redAccent,
+                    fontFamily: 'AbrilFatface',
+                    fontSize: 24.0,
                   ),
                 ),
               ),
-              Expanded(
-                child: Center(
-                  child: Text(
-                    'Next line',
+            ),
+            Expanded(
+              flex: 3,
+              child: Padding(
+                padding: EdgeInsets.only(top: 20.0, left: 25.0, right: 10.0),
+                child: Text('Overcome stress and negative thoughts',
                     style: TextStyle(
                       color: Colors.white,
-                    ),
-                  ),
-                ),
+                      fontFamily: 'AbrilFatface',
+                      fontSize: 36.0,
+                    )),
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );
   }
 }
+
+// Padding(
+//               padding: EdgeInsets.only(top: 40.0),
+//               child: Text(
+//                 'Heading',
+//                 style: TextStyle(
+//                   color: Colors.blue,
+//                   fontFamily: 'AbrilFatface',
+//                   fontSize: 48.0,
+//                 ),
+//               ),
+//             ),
+//             Text(
+//               'Next line',
+//               style: TextStyle(
+//                 color: Colors.white,
+//               ),
+//             ),
