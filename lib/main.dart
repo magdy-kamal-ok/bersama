@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:bersama/screens/home.dart';
+import 'package:bersama/screens/schedule.dart';
 
 void main() => runApp(MyApp());
 
@@ -9,7 +10,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData.dark(),
-      home: HomeScreen(),
+      initialRoute: HomeScreen.id,
+      routes: {
+        HomeScreen.id: (context) => HomeScreen(),
+        ScheduleScreen.id: (context) => ScheduleScreen(),
+      },
     );
   }
 }

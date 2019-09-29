@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:bersama/screens/schedule.dart';
 
 class HomeScreen extends StatefulWidget {
+  static const String id = 'home_screen';
+
   @override
   _HomeScreenState createState() => _HomeScreenState();
 }
@@ -53,7 +56,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 elevation: 10.0,
                 color: Colors.lightBlueAccent,
                 child: MaterialButton(
-                  onPressed: null,
+                  onPressed: () {
+                    Navigator.pushNamed(context, ScheduleScreen.id);
+                  },
                   minWidth: 200.0,
                   height: 42.0,
                   child: Text(
