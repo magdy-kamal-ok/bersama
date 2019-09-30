@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../components/bottom_bar.dart';
 
 class ScheduleScreen extends StatefulWidget {
   static const String id = 'schedule_screen';
@@ -11,9 +12,10 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        child: Text('Schedule'),
+      body: Center(
+        child: Text('Bottom Bar'),
       ),
+      bottomNavigationBar: BottomBar(onTap: null, currentIndex: 1),
     );
   }
 }
