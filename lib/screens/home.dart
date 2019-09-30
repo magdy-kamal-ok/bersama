@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:bersama/screens/schedule.dart';
+import './schedule.dart';
 
 class HomeScreen extends StatefulWidget {
   static const String id = 'home_screen';
@@ -16,7 +16,7 @@ class _HomeScreenState extends State<HomeScreen> {
         decoration: BoxDecoration(
           image: DecorationImage(
             colorFilter: new ColorFilter.mode(
-                Colors.black.withOpacity(0.6), BlendMode.dstATop),
+                Colors.black45.withOpacity(0.9), BlendMode.dstATop),
             image: AssetImage("assets/background_home.jpg"),
             fit: BoxFit.cover,
           ),
@@ -59,12 +59,14 @@ class _HomeScreenState extends State<HomeScreen> {
                   onPressed: () {
                     Navigator.pushNamed(context, ScheduleScreen.id);
                   },
-                  minWidth: 200.0,
+                  minWidth: 150.0,
                   height: 42.0,
                   child: Text(
                     'Get Started',
                     style: TextStyle(
-                        color: Colors.white, fontFamily: 'AbrilFatface'),
+                        color: Colors.white,
+                        fontSize: 18.0,
+                        fontFamily: 'AbrilFatface'),
                   ),
                 ),
               ),
