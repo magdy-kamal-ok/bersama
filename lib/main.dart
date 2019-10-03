@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import './screens/home.dart';
 import './screens/schedule.dart';
+import './screens/giving.dart';
 
 void main() => runApp(MyApp());
 
@@ -14,6 +15,7 @@ class MyApp extends StatelessWidget {
       routes: {
         HomeScreen.id: (context) => HomeScreen(),
         ScheduleScreen.id: (context) => ScheduleScreen(),
+        GivingScreen.id: (context) => GivingScreen(),
       },
     );
   }

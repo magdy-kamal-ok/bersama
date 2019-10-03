@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import './schedule.dart';
+import './giving.dart';
 
 class HomeScreen extends StatefulWidget {
   static const String id = 'home_screen';
