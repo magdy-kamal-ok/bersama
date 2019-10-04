@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 import 'dart:async';
 
+import './home.dart';
+
 class VideoScreen extends StatefulWidget {
   static const String id = 'video_screen';
 
@@ -26,6 +28,12 @@ class _VideoScreenState extends State<VideoScreen> {
   }
 
   @override
+  void dispose() {
+    super.dispose();
+    _controller.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Video Demo',
@@ -40,6 +48,33 @@ class _VideoScreenState extends State<VideoScreen> {
                       child: VideoPlayer(_controller),
                     )
                   : Container(),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                FloatingActionButton(
+                  backgroundColor: Colors.red,
+                  onPressed: () {
+                    setState(() {
+                      _controller.value.isPlaying
+                          ? _controller.pause()
+                          : _controller.play();
+                    });
+                  },
+                  child: Icon(
+                    _controller.value.isPlaying
+                        ? Icons.pause
+                        : Icons.play_arrow,
+                  ),
+                ),
+                RaisedButton(
+                  color: Colors.lightBlueAccent,
+                  onPressed: () {
+                    print('pressed');
+                    Navigator.pushNamed(context, HomeScreen.id);
+                  },
+                )
+              ],
             )
           ],
         ),

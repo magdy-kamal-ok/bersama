@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import './schedule.dart';
 import './giving.dart';
+import './video.dart';
 
 class HomeScreen extends StatefulWidget {
   static const String id = 'home_screen';
@@ -59,7 +60,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 color: Colors.lightBlueAccent,
                 child: MaterialButton(
                   onPressed: () {
-                    Navigator.pushNamed(context, ScheduleScreen.id);
+                    Navigator.pushNamed(context, VideoScreen.id);
                   },
                   minWidth: 150.0,
                   height: 42.0,
